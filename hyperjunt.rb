@@ -270,9 +270,6 @@ end
 after_bundle do
   berails 'db:create'
   berails 'webpacker:install'
-  berails 'generate devise:install'
-  berails 'generate devise User'
-  berails 'db:migrate'
   berails 'generate active_admin:install User'
   berails 'db:migrate'
   berails 'db:seed'
